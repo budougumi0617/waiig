@@ -22,35 +22,57 @@ const (
 	INT = "INT" // 1343456
 
 	// Operators
-	// ASSIGN means "="
-	ASSIGN   = "="
-	PLUS     = "+"
-	MINUS    = "-"
-	BANG     = "!"
+	// ASSIGN means "=".
+	ASSIGN = "="
+	// PLUS means "+".
+	PLUS = "+"
+	// MINUS means "-".
+	MINUS = "-"
+	// BANG means "!".
+	BANG = "!"
+	// ASTERISK means "*".
 	ASTERISK = "*"
-	SLASH    = "/"
+	// SLASH    means "/".
+	SLASH = "/"
 
+	// LT means "<".
 	LT = "<"
+	// GT means ">".
 	GT = ">"
 
-	EQ     = "=="
+	// EQ means "==".
+	EQ = "=="
+	// NOT_EQ means "!=".
 	NOT_EQ = "!="
 
 	// Delimiters
-	COMMA     = ","
+	// COMMA means ",".
+	COMMA = ","
+	// SEMICOLON means ";".
 	SEMICOLON = ";"
 
+	// LPAREN means "(".
 	LPAREN = "("
+	// RPAREN means ")".
 	RPAREN = ")"
+	// LBRACE means "{".
 	LBRACE = "{"
+	// RBRACE means "}".
 	RBRACE = "}"
 
 	// Keywords
+	// FUNCTION means "FUNCTION".
 	FUNCTION = "FUNCTION"
-	LET      = "LET"
-	TRUE     = "TRUE"
-	FALSE    = "FALSE"
-	IF       = "IF"
-	ELSE     = "ELSE"
-	RETURN   = "RETURN"
+	// LET means "LET".
+	LET = "LET"
+	// TRUE means "TRUE".
+	TRUE = "TRUE"
+	// FALSE means "FALSE".
+	FALSE = "FALSE"
+	// IF means "IF".
+	IF = "IF"
+	// ELSE  means "ELSE".
+	ELSE = "ELSE"
+	// RETURN  means "RETURN".
+	RETURN = "RETURN"
 )
