@@ -16,12 +16,14 @@ const (
 	EOF = "EOF"
 
 	// Identifiers + literals
+
 	// IDENT means identifiers.
 	IDENT = "IDENT" // add, foobar, x, y, ...
 	// INT means number.
 	INT = "INT" // 1343456
 
 	// Operators
+
 	// ASSIGN means "=".
 	ASSIGN = "="
 	// PLUS means "+".
@@ -42,10 +44,11 @@ const (
 
 	// EQ means "==".
 	EQ = "=="
-	// NOT_EQ means "!=".
-	NOT_EQ = "!="
+	// NOTEQ means "!=".
+	NOTEQ = "!="
 
 	// Delimiters
+
 	// COMMA means ",".
 	COMMA = ","
 	// SEMICOLON means ";".
@@ -61,6 +64,7 @@ const (
 	RBRACE = "}"
 
 	// Keywords
+
 	// FUNCTION means "FUNCTION".
 	FUNCTION = "FUNCTION"
 	// LET means "LET".
