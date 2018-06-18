@@ -1,11 +1,11 @@
 package token
 
-// TokenType defines token type in Monkey.
-type TokenType string
+// Type defines token type in Monkey.
+type Type string
 
 // Token is a token object.
 type Token struct {
-	Type    TokenType
+	Type    Type
 	Literal string
 }
 
