@@ -25,6 +25,7 @@ func (l *Lexer) NextToken() token.Token {
 }
 
 func (l *Lexer) readChar() {
+	// FIXME not support UTF-8 and Unicode.
 	if l.readPosition >= len(l.input) {
 		l.ch = 0
 	} else {
