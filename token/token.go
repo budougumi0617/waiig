@@ -80,3 +80,21 @@ const (
 	// RETURN  means "RETURN".
 	RETURN = "RETURN"
 )
+
+var keywords = map[string]Type{
+	"fn":     FUNCTION,
+	"let":    LET,
+	"true":   TRUE,
+	"false":  FALSE,
+	"if":     IF,
+	"else":   ELSE,
+	"return": RETURN,
+}
+
+// LookupIdent returns matched token type.
+func LookupIdent(ident string) Type {
+	if tok, ok := keywords[ident]; ok {
+		return tok
+	}
+	return IDENT
+}
