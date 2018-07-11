@@ -1,5 +1,9 @@
 package ast
 
+import (
+	"github.com/budougumi0617/waiig/token"
+)
+
 // Node is base of AST.
 type Node interface {
 	TokenLiteral() string
@@ -30,3 +34,26 @@ func (p *Program) TokenLiteral() string {
 	}
 	return ""
 }
+
+// LetStatement is LET statement.
+type LetStatement struct {
+	Token token.Token
+	Name  *Identifier
+	Value Expression
+}
+
+func (ls *LetStatement) statementNode() {}
+
+// TokenLiteral returns literal.
+func (ls *LetStatement) TokenLiteral() string { return ls.Token.Literal }
+
+// Identifier is identifier
+type Identifier struct {
+	Token token.Token // the token.IDENT token
+	Value string
+}
+
+func (i *Identifier) expressionNode() {}
+
+// TokenLiteral returns literal.
+func (i *Identifier) TokenLiteral() string { return i.Token.Literal }
