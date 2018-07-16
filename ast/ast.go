@@ -7,7 +7,6 @@ import (
 // Node is base of AST.
 type Node interface {
 	TokenLiteral() string
-	String() string
 }
 
 // Statement is base statement.
