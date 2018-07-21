@@ -100,7 +100,7 @@ func (p *Parser) expectPeek(t token.Type) bool {
 }
 
 // Errors is not implement yet.
-func (p *Parser) Errors() []error {
+func (p *Parser) Errors() []string {
 	return p.errors
 }
 
