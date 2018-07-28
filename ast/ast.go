@@ -67,3 +67,14 @@ func (i *Identifier) expressionNode() {}
 
 // TokenLiteral returns literal.
 func (i *Identifier) TokenLiteral() string { return i.Token.Literal }
+
+// ExpressionStatement is expression statement.
+type ExpressionStatement struct {
+	Token      token.Token // the first token of the expression
+	Expression Expression
+}
+
+func (es *ExpressionStatement) statementNode() {}
+
+// TokenLiteral returns literal.
+func (es *ExpressionStatement) TokenLiteral() string { return es.Token.Literal }
